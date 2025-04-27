@@ -140,7 +140,7 @@ const ContactPage = () => {
   });
 
   // Form submission handler
-  const onSubmit = async (data) => {
+  const onSubmit = async () => {
     setIsSubmitting(true);
     setSubmitStatus(null);
 
@@ -253,8 +253,8 @@ const ContactPage = () => {
                 <CardHeader>
                   <CardTitle>Send Me a Message</CardTitle>
                   <CardDescription>
-                    Fill out the form below and I'll get back to you as soon as
-                    possible.
+                    Fill out the form below and I will get back to you as soon
+                    as possible.
                   </CardDescription>
                 </CardHeader>
 
