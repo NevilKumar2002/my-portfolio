@@ -246,7 +246,7 @@ const About = () => {
                       >
                         <div className="h-full w-full rounded-full overflow-hidden relative bg-background">
                           <Image
-                            src="/Images/profile_pic.jpg"
+                            src="/Images/profile_pic.jpeg"
                             alt="Nevil Kumar Gurram"
                             fill
                             className="object-cover rounded-full"

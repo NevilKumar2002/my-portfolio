@@ -13,9 +13,9 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Nevil Kumar Gurram - Software Developer",
+  title: "Nevil Kumar - Software Developer",
   description:
-    "Portfolio of Nevil Kumar Gurram, Frontend Developer specializing in React.js and Next.js",
+    "Portfolio of Nevil Kumar, Frontend Developer specializing in React.js and Next.js",
 };
 
 export default function RootLayout({ children }) {

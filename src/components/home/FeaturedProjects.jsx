@@ -103,7 +103,7 @@ export default function Projects() {
   const projectsVisible = useScrollIntoView("projects-section");
 
   return (
-    <section id="projects-section" className="py-2 lg:ml-10 lg:mr-10">
+    <section id="projects-section" className="py-2 lg:mx-10 mx-4">
       {/* Decorative background elements */}
       <motion.div
         className="absolute right-1/4 top-1/3 h-80 w-80 rounded-full bg-blue-600/5 blur-3xl -z-10"
@@ -123,7 +123,7 @@ export default function Projects() {
       />
 
       <div className="flex flex-col gap-8">
-        <div className="container px-4 md:px-6">
+        <div className="container px-2 md:px-6">
           <h2 className="text-2xl font-bold tracking-tight md:text-3xl mb-2">
             Projects
             <motion.span
@@ -143,7 +143,7 @@ export default function Projects() {
         </div>
 
         <motion.div
-          className="container px-4 md:px-6"
+          className="container px-2 md:px-6"
           variants={containerVariants}
           initial="hidden"
           animate={projectsVisible ? "visible" : "hidden"}
@@ -175,10 +175,10 @@ export default function Projects() {
                   />
 
                   <CardHeader>
-                    <CardTitle className="line-clamp-1">
+                    <CardTitle className="text-base sm:text-lg">
                       {project.title}
                     </CardTitle>
-                    <CardDescription className="line-clamp-3">
+                    <CardDescription className="text-sm sm:text-base">
                       {project.description}
                     </CardDescription>
                   </CardHeader>
@@ -191,7 +191,9 @@ export default function Projects() {
                           whileHover={{ scale: 1.1 }}
                           transition={{ duration: 0.2 }}
                         >
-                          <Badge variant="secondary">{tech}</Badge>
+                          <Badge variant="secondary" className="text-xs sm:text-sm">
+                            {tech}
+                          </Badge>
                         </motion.div>
                       ))}
                     </div>
